@@ -1,0 +1,15 @@
+col_by_value            col_by_value
+convertId               convertId
+download_KEGGfile       download_KEGGfile
+download_latest_pathway
+                        download_latest_pathway
+find_enriched_pathway   find_enriched_pathway
+newIdMatrix             newIdMatrix
+parse_XMLfile           parse_XMLfile
+pho_sites_count         number of phosphorylation sites quantified for
+                        each gene
+plot_pathway            plot_pathway
+plot_pathway_cor        plot_pathway_cor
+plot_profile            plot_profile
+pro_pho_expr            expression profiles in proteome and
+                        phosphoproteome

@@ -1,0 +1,114 @@
+MRcoefs                 Table of top-ranked microbial marker gene from
+                        linear model fit
+MRcounts                Accessor for the counts slot of a MRexperiment
+                        object
+MRexperiment-class      Class "MRexperiment" - a modified eSet object
+                        for the data from high-throughput sequencing
+                        experiments
+MRexperiment2biom       MRexperiment to biom objects
+MRfulltable             Table of top microbial marker gene from linear
+                        model fit including sequence information
+MRtable                 Table of top microbial marker gene from linear
+                        model fit including sequence information
+aggregateByTaxonomy     Aggregates a MRexperiment object or counts
+                        matrix to a particular level.
+biom2MRexperiment       Biome to MRexperiment objects
+calcNormFactors         Cumulative sum scaling normalization factors
+                        Return a vector of the the sum up to and
+                        including a quantile.
+calculateEffectiveSamples
+                        Estimated effective samples per feature
+correctIndices          Calculate the correct indices for the output of
+                        correlationTest
+correlationTest         Correlation of each row of a matrix or
+                        MRexperiment object
+cumNorm                 Cumulative sum scaling normalization
+cumNormMat              Cumulative sum scaling factors.
+cumNormStat             Cumulative sum scaling percentile selection
+cumNormStatFast         Cumulative sum scaling percentile selection
+doCountMStep            Compute the Maximization step calculation for
+                        features still active.
+doEStep                 Compute the Expectation step.
+doZeroMStep             Compute the zero Maximization step.
+expSummary              Access MRexperiment object experiment data
+exportMat               Export the normalized MRexperiment dataset as a
+                        matrix.
+exportStats             Various statistics of the count data.
+filterData              Filter datasets according to no. features
+                        present in features with at least a certain
+                        depth.
+fitDO                   Wrapper to calculate Discovery Odds Ratios on
+                        feature values.
+fitMeta                 Computes a slightly modified form of Metastats.
+fitPA                   Wrapper to run fisher's test on
+                        presence/absence of a feature.
+fitSSTimeSeries         Discover differentially abundant time intervals
+                        using SS-Anova
+fitTimeSeries           Discover differentially abundant time intervals
+fitZig                  Computes the weighted fold-change estimates and
+                        t-statistics.
+getCountDensity         Compute the value of the count density function
+                        from the count model residuals.
+getEpsilon              Calculate the relative difference between
+                        iterations of the negative log-likelihoods.
+getNegativeLogLikelihoods
+                        Calculate the negative log-likelihoods for the
+                        various features given the residuals.
+getPi                   Calculate the mixture proportions from the zero
+                        model / spike mass model residuals.
+getZ                    Calculate the current Z estimate
+                        responsibilities (posterior probabilities)
+isItStillActive         Function to determine if a feature is still
+                        active.
+libSize                 Access sample depth of coverage from
+                        MRexperiment object
+load_biom               Load objects organized in the Biome format.
+load_meta               Load a count dataset associated with a study.
+load_metaQ              Load a count dataset associated with a study
+                        set up in a Qiime format.
+load_phenoData          Load a clinical/phenotypic dataset associated
+                        with a study.
+lungData                OTU abundance matrix of samples from a
+                        smoker/non-smoker study
+makeLabels              Function to make labels simpler
+metagenomeSeq-package   Statistical analysis for sparse high-throughput
+                        sequencing
+mouseData               OTU abundance matrix of mice samples from a
+                        diet longitudinal study
+newMRexperiment         Create a MRexperiment object
+normFactors             Access the normalization factors in a
+                        MRexperiment object
+plotBubble              Basic plot of binned vectors.
+plotClassTimeSeries     Plot abundances by class
+plotCorr                Basic correlation plot function for normalized
+                        or unnormalized counts.
+plotFeature             Basic plot function of the raw or normalized
+                        data.
+plotGenus               Basic plot function of the raw or normalized
+                        data.
+plotMRheatmap           Basic heatmap plot function for normalized
+                        counts.
+plotOTU                 Basic plot function of the raw or normalized
+                        data.
+plotOrd                 Plot of either PCA or MDS coordinates for the
+                        distances of normalized or unnormalized counts.
+plotRare                Plot of rarefaction effect
+plotTimeSeries          Plot difference function for particular
+                        bacteria
+posterior.probs         Access the posterior probabilities that results
+                        from analysis
+ssFit                   smoothing-splines anova fit
+ssIntervalCandidate     calculate interesting time intervals Calculates
+                        time intervals of interest using SS-Anova
+                        fitted confidence intervals.
+ssPerm                  class permutations for smoothing-spline time
+                        series analysis Creates a list of permuted
+                        class memberships for the time series
+                        permuation tests.
+ssPermAnalysis          smoothing-splines anova fits for each
+                        permutation
+trapz                   Trapezoidal Integration Compute the area of a
+                        function with values 'y' at the points 'x'.
+                        Function comes from the pracma package.
+uniqueFeatures          Table of features unique to a group
+zigControl              Settings for the fitZig function

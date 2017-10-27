@@ -1,0 +1,86 @@
+<!--
+%\VignetteEngine{knitr::knitr}
+%\VignetteIndexEntry{Using interactiveDisplayBase for Bioconductor object visualization and modification}
+-->
+
+```{r setup, echo=FALSE}
+suppressWarnings(suppressPackageStartupMessages(library(knitr)))
+options(width=80)
+```
+
+```{r wrap-hook, echo=FALSE}
+hook_output = knit_hooks$get('output')
+knit_hooks$set(output = function(x, options) {
+  # this hook is used only when the linewidth option is not NULL
+  if (!is.null(n <- options$linewidth)) {
+    x = knitr:::split_lines(x)
+    # any lines wider than n should be wrapped
+    if (any(nchar(x) > n)) x = strwrap(x, width = n)
+    x = paste(x, collapse = '\n')
+  }
+  hook_output(x, options)
+})
+```
+
+```{r interactiveDisplayBase-load, echo=FALSE}
+suppressWarnings(suppressPackageStartupMessages(library(interactiveDisplayBase)))
+```
+
+# interactiveDisplayBase
+
+[interactiveDisplayBase](http://bioconductor.org/packages/2.13/bioc/html/interactiveDisplayBase.html)
+
+`interactiveDisplayBase` uses the function `display()` to host a browser based 
+application on the fly using the Shiny package.  Shiny UI elements are available based on the 
+object passed to `display()`.  These allow the user to modify how the plot is 
+displayed, and for some objects, modify or subset the data and send it back to 
+the console.
+
+## Methods
+
+
+Many of the display method will have a button that allows you return
+subset values back to the R session.  To use these, couple the intial
+call with an assignment operator like this:
+
+```{r dataframe_demo, eval=FALSE}
+mtcars2 <- display(mtcars)
+```
+
+Once you leave the diplay web gui, the results of the above
+interaction will be captured inside of mtcars2.
+
+
+## Acknowledgments
+
+Shiny <br/>
+Joe Cheng and Winston Chang <br/>
+http://www.rstudio.com/shiny/ <br/>
+
+Force Layout <br/>
+Jeff Allen <br/>
+https://github.com/trestletech/shiny-sandbox/tree/master/grn <br/>
+
+gridSVG <br/>
+Simon Potter <br/>
+http://sjp.co.nz/projects/gridsvg/ <br/>
+
+Zoom/Pan JavaScript libraries <br/>
+John Krauss <br/>
+https://github.com/talos/jquery-svgpan <br/>
+Andrea Leofreddi <br/>
+https://code.google.com/p/svgpan/ <br/>
+
+JavaScript Color Chooser <br/>
+Jan Odvarko <br/>
+http://jscolor.com/ <br/>
+
+Data-Driven Documents <br/>
+Michael Bostock <br/>
+http://d3js.org/ <br/>
+
+Javascript for returning values from data.frames <br/>
+Kirill Savin <br/> 
+
+Help with the display method for data.frames <br/>
+Dan Tenenbaum <br/>

@@ -1,0 +1,16 @@
+ResourceSelection-package	ResourceSelection-package
+CAIC	CAIC
+CAIC.default	CAIC
+goats	goats
+hoslem.test	hoslem.test
+kdepairs	kdepairs
+kdepairs.default	kdepairs
+kdepairs.rsf	kdepairs
+makeUsedAvail	makeUsedAvail
+makeUsedAvail.default	makeUsedAvail
+makeUsedAvail.formula	makeUsedAvail
+ResourceSelection	ResourceSelection-package
+rsf	rsf
+rsf.fit	rsf
+rspf	rsf
+simulateUsedAvail	simulateUsedAvail

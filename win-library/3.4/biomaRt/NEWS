@@ -1,0 +1,14 @@
+CHANGES IN VERSION 2.32.0
+-------------------------
+
+BUG FIXES
+
+    o Fixed bug when columns were not returned in the order requested,
+    which resulted in the wrong column names being added to the result.
+
+CHANGES IN VERSION 2.30.0
+-------------------------
+
+SIGNIFICANT USER-LEVEL CHANGES
+
+    o Updated vignette to use BiocStyle and execute most code chunks.

@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Statistical analysis for sparse high-throughput sequencing</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+<h1> Statistical analysis for sparse high-throughput sequencing
+<img class="toplogo" src="../../../doc/html/logo.jpg" alt="[R logo]">
+</h1>
+<hr>
+<div align="center">
+<a href="../../../doc/html/packages.html"><img src="../../../doc/html/left.jpg" alt="[Up]" width="30" height="30" border="0"></a>
+<a href="../../../doc/html/index.html"><img src="../../../doc/html/up.jpg" alt="[Top]" width="30" height="30" border="0"></a>
+</div><h2>Documentation for package &lsquo;metagenomeSeq&rsquo; version 1.8.3</h2>
+
+<ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
+<li><a href="../doc/index.html">User guides, package vignettes and other documentation.</a></li>
+<li><a href="../NEWS">Package NEWS</a>.</li>
+</ul>
+
+<h2>Help Pages</h2>
+
+
+<table width="100%">
+<tr><td width="25%"><a href="metagenomeSeq-package.html">metagenomeSeq-package</a></td>
+<td>Statistical analysis for sparse high-throughput sequencing</td></tr>
+<tr><td width="25%"><a href="aggregateByTaxonomy.html">aggregateByTaxonomy</a></td>
+<td>Aggregates a MRexperiment object or counts matrix to a particular level.</td></tr>
+<tr><td width="25%"><a href="aggregateByTaxonomy.html">aggTax</a></td>
+<td>Aggregates a MRexperiment object or counts matrix to a particular level.</td></tr>
+<tr><td width="25%"><a href="biom2MRexperiment.html">biom2MRexperiment</a></td>
+<td>Biome to MRexperiment objects</td></tr>
+<tr><td width="25%"><a href="calcNormFactors.html">calcNormFactors</a></td>
+<td>Cumulative sum scaling normalization factors Return a vector of the the sum up to and including a quantile.</td></tr>
+<tr><td width="25%"><a href="calculateEffectiveSamples.html">calculateEffectiveSamples</a></td>
+<td>Estimated effective samples per feature</td></tr>
+<tr><td width="25%"><a href="MRexperiment-class.html">colMeans-method</a></td>
+<td>Class "MRexperiment" - a modified eSet object for the data from high-throughput sequencing experiments</td></tr>
+<tr><td width="25%"><a href="MRexperiment-class.html">colSums-method</a></td>
+<td>Class "MRexperiment" - a modified eSet object for the data from high-throughput sequencing experiments</td></tr>
+<tr><td width="25%"><a href="correctIndices.html">correctIndices</a></td>
+<td>Calculate the correct indices for the output of correlationTest</td></tr>
+<tr><td width="25%"><a href="correlationTest.html">correlationTest</a></td>
+<td>Correlation of each row of a matrix or MRexperiment object</td></tr>
+<tr><td width="25%"><a href="correlationTest.html">corTest</a></td>
+<td>Correlation of each row of a matrix or MRexperiment object</td></tr>
+<tr><td width="25%"><a href="cumNorm.html">cumNorm</a></td>
+<td>Cumulative sum scaling normalization</td></tr>
+<tr><td width="25%"><a href="cumNormMat.html">cumNormMat</a></td>
+<td>Cumulative sum scaling factors.</td></tr>
+<tr><td width="25%"><a href="cumNormStat.html">cumNormStat</a></td>
+<td>Cumulative sum scaling percentile selection</td></tr>
+<tr><td width="25%"><a href="cumNormStatFast.html">cumNormStatFast</a></td>
+<td>Cumulative sum scaling percentile selection</td></tr>
+<tr><td width="25%"><a href="doCountMStep.html">doCountMStep</a></td>
+<td>Compute the Maximization step calculation for features still active.</td></tr>
+<tr><td width="25%"><a href="doEStep.html">doEStep</a></td>
+<td>Compute the Expectation step.</td></tr>
+<tr><td width="25%"><a href="doZeroMStep.html">doZeroMStep</a></td>
+<td>Compute the zero Maximization step.</td></tr>
+<tr><td width="25%"><a href="exportMat.html">exportMat</a></td>
+<td>Export the normalized MRexperiment dataset as a matrix.</td></tr>
+<tr><td width="25%"><a href="exportMat.html">exportMatrix</a></td>
+<td>Export the normalized MRexperiment dataset as a matrix.</td></tr>
+<tr><td width="25%"><a href="exportStats.html">exportStats</a></td>
+<td>Various statistics of the count data.</td></tr>
+<tr><td width="25%"><a href="expSummary.html">expSummary</a></td>
+<td>Access MRexperiment object experiment data</td></tr>
+<tr><td width="25%"><a href="expSummary.html">expSummary-method</a></td>
+<td>Access MRexperiment object experiment data</td></tr>
+<tr><td width="25%"><a href="filterData.html">filterData</a></td>
+<td>Filter datasets according to no. features present in features with at least a certain depth.</td></tr>
+<tr><td width="25%"><a href="fitDO.html">fitDO</a></td>
+<td>Wrapper to calculate Discovery Odds Ratios on feature values.</td></tr>
+<tr><td width="25%"><a href="fitMeta.html">fitMeta</a></td>
+<td>Computes a slightly modified form of Metastats.</td></tr>
+<tr><td width="25%"><a href="fitPA.html">fitPA</a></td>
+<td>Wrapper to run fisher's test on presence/absence of a feature.</td></tr>
+<tr><td width="25%"><a href="fitSSTimeSeries.html">fitSSTimeSeries</a></td>
+<td>Discover differentially abundant time intervals using SS-Anova</td></tr>
+<tr><td width="25%"><a href="fitTimeSeries.html">fitTimeSeries</a></td>
+<td>Discover differentially abundant time intervals</td></tr>
+<tr><td width="25%"><a href="fitZig.html">fitZig</a></td>
+<td>Computes the weighted fold-change estimates and t-statistics.</td></tr>
+<tr><td width="25%"><a href="plotGenus.html">genusPlot</a></td>
+<td>Basic plot function of the raw or normalized data.</td></tr>
+<tr><td width="25%"><a href="getCountDensity.html">getCountDensity</a></td>
+<td>Compute the value of the count density function from the count model residuals.</td></tr>
+<tr><td width="25%"><a href="getEpsilon.html">getEpsilon</a></td>
+<td>Calculate the relative difference between iterations of the negative log-likelihoods.</td></tr>
+<tr><td width="25%"><a href="getNegativeLogLikelihoods.html">getNegativeLogLikelihoods</a></td>
+<td>Calculate the negative log-likelihoods for the various features given the residuals.</td></tr>
+<tr><td width="25%"><a href="getPi.html">getPi</a></td>
+<td>Calculate the mixture proportions from the zero model / spike mass model residuals.</td></tr>
+<tr><td width="25%"><a href="getZ.html">getZ</a></td>
+<td>Calculate the current Z estimate responsibilities (posterior probabilities)</td></tr>
+<tr><td width="25%"><a href="isItStillActive.html">isItStillActive</a></td>
+<td>Function to determine if a feature is still active.</td></tr>
+<tr><td width="25%"><a href="libSize.html">libSize</a></td>
+<td>Access sample depth of coverage from MRexperiment object</td></tr>
+<tr><td width="25%"><a href="libSize.html">libSize-method</a></td>
+<td>Access sample depth of coverage from MRexperiment object</td></tr>
+<tr><td width="25%"><a href="load_biom.html">load_biom</a></td>
+<td>Load objects organized in the Biome format.</td></tr>
+<tr><td width="25%"><a href="load_meta.html">load_meta</a></td>
+<td>Load a count dataset associated with a study.</td></tr>
+<tr><td width="25%"><a href="load_metaQ.html">load_metaQ</a></td>
+<td>Load a count dataset associated with a study set up in a Qiime format.</td></tr>
+<tr><td width="25%"><a href="load_phenoData.html">load_phenoData</a></td>
+<td>Load a clinical/phenotypic dataset associated with a study.</td></tr>
+<tr><td width="25%"><a href="lungData.html">lungData</a></td>
+<td>OTU abundance matrix of samples from a smoker/non-smoker study</td></tr>
+<tr><td width="25%"><a href="makeLabels.html">makeLabels</a></td>
+<td>Function to make labels simpler</td></tr>
+<tr><td width="25%"><a href="metagenomeSeq-package.html">metagenomeSeq</a></td>
+<td>Statistical analysis for sparse high-throughput sequencing</td></tr>
+<tr><td width="25%"><a href="load_meta.html">metagenomicLoader</a></td>
+<td>Load a count dataset associated with a study.</td></tr>
+<tr><td width="25%"><a href="mouseData.html">mouseData</a></td>
+<td>OTU abundance matrix of mice samples from a diet longitudinal study</td></tr>
+<tr><td width="25%"><a href="MRcoefs.html">MRcoefs</a></td>
+<td>Table of top-ranked microbial marker gene from linear model fit</td></tr>
+<tr><td width="25%"><a href="MRcounts.html">MRcounts</a></td>
+<td>Accessor for the counts slot of a MRexperiment object</td></tr>
+<tr><td width="25%"><a href="MRcounts.html">MRcounts-method</a></td>
+<td>Accessor for the counts slot of a MRexperiment object</td></tr>
+<tr><td width="25%"><a href="MRexperiment-class.html">MRexperiment-class</a></td>
+<td>Class "MRexperiment" - a modified eSet object for the data from high-throughput sequencing experiments</td></tr>
+<tr><td width="25%"><a href="MRexperiment2biom.html">MRexperiment2biom</a></td>
+<td>MRexperiment to biom objects</td></tr>
+<tr><td width="25%"><a href="MRfulltable.html">MRfulltable</a></td>
+<td>Table of top microbial marker gene from linear model fit including sequence information</td></tr>
+<tr><td width="25%"><a href="MRtable.html">MRtable</a></td>
+<td>Table of top microbial marker gene from linear model fit including sequence information</td></tr>
+<tr><td width="25%"><a href="newMRexperiment.html">newMRexperiment</a></td>
+<td>Create a MRexperiment object</td></tr>
+<tr><td width="25%"><a href="normFactors.html">normFactors</a></td>
+<td>Access the normalization factors in a MRexperiment object</td></tr>
+<tr><td width="25%"><a href="normFactors.html">normFactors-method</a></td>
+<td>Access the normalization factors in a MRexperiment object</td></tr>
+<tr><td width="25%"><a href="load_phenoData.html">phenoData</a></td>
+<td>Load a clinical/phenotypic dataset associated with a study.</td></tr>
+<tr><td width="25%"><a href="plotBubble.html">plotBubble</a></td>
+<td>Basic plot of binned vectors.</td></tr>
+<tr><td width="25%"><a href="plotClassTimeSeries.html">plotClassTimeSeries</a></td>
+<td>Plot abundances by class</td></tr>
+<tr><td width="25%"><a href="plotCorr.html">plotCorr</a></td>
+<td>Basic correlation plot function for normalized or unnormalized counts.</td></tr>
+<tr><td width="25%"><a href="plotFeature.html">plotFeature</a></td>
+<td>Basic plot function of the raw or normalized data.</td></tr>
+<tr><td width="25%"><a href="plotGenus.html">plotGenus</a></td>
+<td>Basic plot function of the raw or normalized data.</td></tr>
+<tr><td width="25%"><a href="plotMRheatmap.html">plotMRheatmap</a></td>
+<td>Basic heatmap plot function for normalized counts.</td></tr>
+<tr><td width="25%"><a href="plotOrd.html">plotOrd</a></td>
+<td>Plot of either PCA or MDS coordinates for the distances of normalized or unnormalized counts.</td></tr>
+<tr><td width="25%"><a href="plotOTU.html">plotOTU</a></td>
+<td>Basic plot function of the raw or normalized data.</td></tr>
+<tr><td width="25%"><a href="plotRare.html">plotRare</a></td>
+<td>Plot of rarefaction effect</td></tr>
+<tr><td width="25%"><a href="plotTimeSeries.html">plotTimeSeries</a></td>
+<td>Plot difference function for particular bacteria</td></tr>
+<tr><td width="25%"><a href="posterior.probs.html">posterior.probs</a></td>
+<td>Access the posterior probabilities that results from analysis</td></tr>
+<tr><td width="25%"><a href="posterior.probs.html">posterior.probs-method</a></td>
+<td>Access the posterior probabilities that results from analysis</td></tr>
+<tr><td width="25%"><a href="load_metaQ.html">qiimeLoader</a></td>
+<td>Load a count dataset associated with a study set up in a Qiime format.</td></tr>
+<tr><td width="25%"><a href="MRexperiment-class.html">rowMeans-method</a></td>
+<td>Class "MRexperiment" - a modified eSet object for the data from high-throughput sequencing experiments</td></tr>
+<tr><td width="25%"><a href="MRexperiment-class.html">rowSums-method</a></td>
+<td>Class "MRexperiment" - a modified eSet object for the data from high-throughput sequencing experiments</td></tr>
+<tr><td width="25%"><a href="zigControl.html">settings2</a></td>
+<td>Settings for the fitZig function</td></tr>
+<tr><td width="25%"><a href="ssFit.html">ssFit</a></td>
+<td>smoothing-splines anova fit</td></tr>
+<tr><td width="25%"><a href="ssIntervalCandidate.html">ssIntervalCandidate</a></td>
+<td>calculate interesting time intervals Calculates time intervals of interest using SS-Anova fitted confidence intervals.</td></tr>
+<tr><td width="25%"><a href="ssPerm.html">ssPerm</a></td>
+<td>class permutations for smoothing-spline time series analysis Creates a list of permuted class memberships for the time series permuation tests.</td></tr>
+<tr><td width="25%"><a href="ssPermAnalysis.html">ssPermAnalysis</a></td>
+<td>smoothing-splines anova fits for each permutation</td></tr>
+<tr><td width="25%"><a href="trapz.html">trapz</a></td>
+<td>Trapezoidal Integration Compute the area of a function with values 'y' at the points 'x'. Function comes from the pracma package.</td></tr>
+<tr><td width="25%"><a href="uniqueFeatures.html">uniqueFeatures</a></td>
+<td>Table of features unique to a group</td></tr>
+<tr><td width="25%"><a href="zigControl.html">zigControl</a></td>
+<td>Settings for the fitZig function</td></tr>
+<tr><td width="25%"><a href="MRexperiment-class.html">[-method</a></td>
+<td>Class "MRexperiment" - a modified eSet object for the data from high-throughput sequencing experiments</td></tr>
+</table>
+</body></html>

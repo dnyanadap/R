@@ -1,0 +1,15 @@
+altgr                   altgr: Open a Shiny Application for ...
+bicgo                   bicgo: Open a Shiny Application for
+                        manual/interactive biclustering and GO
+                        exploration
+display                 display: Open a Shiny application for a
+                        Bioconductor object
+expr                    An Example ExpressionSet object
+gridsvgjs               gridsvgjs: Open a Shiny Application for a Grid
+                        Plot
+gridtweak               gridtweak: Open a Shiny Application for the
+                        purpose of tweaking grid plots
+mmgr                    An Example GRanges Object
+mmgrl                   An Example GRangesList Object
+se                      An Example SummarizedExperiment Object
+simplenet               simplenet: Open a Shiny Application for ...

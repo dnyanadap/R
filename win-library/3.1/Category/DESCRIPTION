@@ -1,0 +1,29 @@
+Package: Category
+Title: Category Analysis
+Version: 2.32.0
+Author: R. Gentleman with contributions from S. Falcon and D.Sarkar
+Description: A collection of tools for performing category analysis.
+Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
+License: Artistic-2.0
+Depends: methods, stats4, Matrix, BiocGenerics, AnnotationDbi, Biobase,
+        GO.db,
+Imports: methods, utils, stats, stats4, BiocGenerics, graph, Biobase,
+        AnnotationDbi, RBGL, GSEABase (>= 1.19.3), genefilter, annotate
+        (>= 1.15.6)
+Suggests: EBarrays, ALL, Rgraphviz, RColorBrewer, xtable (>= 1.4-6),
+        hgu95av2.db, KEGG.db, SNPchip, geneplotter, limma, lattice,
+        graph, Biobase, genefilter, methods, RUnit, org.Sc.sgd.db,
+        GOstats
+LazyLoad: Yes
+Collate: AllClasses.R AllGenerics.R categoryToEntrezBuilder-methods.R
+        categoryName-methods.R hyperg-methods.R hyperGTest-methods.R
+        linearMTest-methods.R DatPkg-accessors.R ChrBandTree.R
+        tree_visitor.R cb_test.R initialize-methods.R
+        HyperGParams-accessors.R LinearMParams-accessors.R
+        HyperGResult-accessors.R LinearMResult-accessors.R
+        ChrMapHyperGResult-accessors.R ChrMapLinearMResult-accessors.R
+        show-methods.R universeBuilder-methods.R utils.R MAPcode.R
+        catcode.R cateGOryMatrix.R gseaperm.R summary-methods.R mouse.R
+biocViews: Annotation, GO, Pathways, GeneSetEnrichment
+Packaged: 2014-10-14 02:09:37 UTC; biocbuild
+Built: R 3.1.1; ; 2014-10-14 06:51:07 UTC; windows
